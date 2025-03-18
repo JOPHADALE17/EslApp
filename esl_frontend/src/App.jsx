@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import HomePage from "./pages/homepage";
 import Login from "./pages/login";
+import AdminRoutes from "./pages/admin/adminRoutes";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="login" element={<Login/>}/>
+        <Route path="/admin/*" element={<AdminRoutes/>}/>
       </Routes>
     </Router>
   )

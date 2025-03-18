@@ -59,6 +59,15 @@ function Login() {
 
         {/* Bottom Links */}
         <div className="mt-4 text-sm">
+        <p>
+            Don't have an account?{" "}
+            <span
+              className="text-[#1E97BE] cursor-pointer hover:underline"
+              onClick={() => navigate("/signup")}
+            >
+              Sign up
+            </span>
+          </p>
           <p className="text-gray-500 cursor-pointer hover:underline mt-2">
             Forgot password?
           </p>
