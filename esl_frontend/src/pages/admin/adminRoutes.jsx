@@ -1,5 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import NavbarAdmin from "./NavbarAdmin";
+import NavbarAdmin from "./navbarAdmin";
+import TeacherAdmin from "./components/teacherAdmin";
+import ClassesAdmin from "./components/classesAdmin";
+import StudentAdmin from "./components/studentAdmin";
 import DashboardAdmin from "./components/dashboardAdmin";
 
 function AdminRoutes() {
@@ -12,8 +15,9 @@ function AdminRoutes() {
       <div className="flex-1 p-3 mt-15">
         <Routes>
           <Route path="/" element={<DashboardAdmin />} />
-          {/* <Route path="/bookmark" element={<Bookmark />} />
-          <Route path="/messages" element={<Messages />} /> */}
+          <Route path="/classes" element={<ClassesAdmin />} />
+          <Route path="/teachers" element={<TeacherAdmin />} />
+          <Route path="/students" element={<StudentAdmin />} />
         </Routes>
       </div>
     </div>

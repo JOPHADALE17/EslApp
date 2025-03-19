@@ -4,8 +4,10 @@ import {
   FaBars,
   FaTimes,
   FaHome,
-  FaBookmark,
+  FaChalkboardTeacher,
+  FaUserGraduate,
   FaEnvelope,
+  FaBook,
   FaSignOutAlt,
 } from "react-icons/fa";
 import eslLogo from "../../assets/esl-logo.png";
@@ -66,13 +68,38 @@ function NavbarAdmin() {
 
           {/* Sidebar Links */}
           <div className="mt-5">
-            <NavItems icon={<FaHome />} text="Home" onClick={() => navigate("/admin")} />
-            <NavItems icon={<FaBookmark />} text="Bookmark" onClick={() => navigate("/admin/bookmark")} />
-            <NavItems icon={<FaEnvelope />} text="Messages" onClick={() => navigate("/admin/messages")} />
-            <NavItems icon={<FaSignOutAlt />} text="Logout" onClick={() => navigate("/logout")} />
+            <NavItems
+              icon={<FaHome />}
+              text="Home"
+              onClick={() => navigate("/admin")}
+            />
+            <NavItems
+              icon={<FaBook />}
+              text="Classes"
+              onClick={() => navigate("/admin/classes")}
+            />
+            <NavItems
+              icon={<FaChalkboardTeacher />}
+              text="Teacher"
+              onClick={() => navigate("/admin/teachers")}
+            />
+            <NavItems
+              icon={<FaUserGraduate />}
+              text="Student"
+              onClick={() => navigate("/admin/students")}
+            />
+            {/* <NavItems
+              icon={<FaEnvelope />}
+              text="Student"
+              onClick={() => navigate("/admin/students")}
+            /> */}
+            <NavItems
+              icon={<FaSignOutAlt />}
+              text="Logout"
+              onClick={() => navigate("/logout")}
+            />
           </div>
         </div>
-
       </div>
     </div>
   );
