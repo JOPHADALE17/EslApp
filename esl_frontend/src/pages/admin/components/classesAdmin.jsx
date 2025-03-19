@@ -4,7 +4,7 @@ function ClassesAdmin() {
   return (
     <div className="flex flex-col w-full">
       {/* Header Section */}
-      <div className="flex items-center justify-between gap-2 fixed w-full bg-white top-16 pr-6 pb-3">
+      <div className="flex items-center justify-between gap-2 fixed w-full bg-white top-16 pr-6 pb-3 lg:pr-33">
         {/* Add Classes Button */}
         <button className="bg-blue-600 p-2 sm:p-3 rounded-lg text-white flex items-center justify-center transition hover:bg-blue-700">
           <span className="hidden sm:block text-sm sm:text-base">

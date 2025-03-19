@@ -51,56 +51,48 @@ function NavbarAdmin() {
       </nav>
 
       {/* ✅ Sidebar */}
-      <div className="flex mt-16">
-        {/* Sidebar - Fixed on Large Screens, Toggles on Mobile */}
-        <div
-          className={`fixed top-0 bottom-0 bg-gray-200 shadow-lg transition-all duration-300 w-auto pt-6 ${
-            isSidebarOpen ? "left-0" : "-left-72"
-          } lg:left-0 lg:w-auto lg:relative h-screen`}
-        >
-          {/* Sidebar Header */}
-          <div className="flex items-center justify-between">
-            <FaTimes
-              className="cursor-pointer text-xl lg:hidden"
-              onClick={() => setIsSidebarOpen(false)}
-            />
-          </div>
-
-          {/* Sidebar Links */}
-          <div className="mt-5">
-            <NavItems
-              icon={<FaHome />}
-              text="Home"
-              onClick={() => navigate("/admin")}
-            />
-            <NavItems
-              icon={<FaBook />}
-              text="Classes"
-              onClick={() => navigate("/admin/classes")}
-            />
-            <NavItems
-              icon={<FaChalkboardTeacher />}
-              text="Teacher"
-              onClick={() => navigate("/admin/teachers")}
-            />
-            <NavItems
-              icon={<FaUserGraduate />}
-              text="Student"
-              onClick={() => navigate("/admin/students")}
-            />
-            {/* <NavItems
+      {/* <div className="flex mt-16"> */}
+      {/* Sidebar - Fixed on Large Screens, Toggles on Mobile */}
+      <div
+        className={`fixed top-10 lg:left-0 bg-gray-200 shadow-lg transition-all duration-300 w-auto pt-6 h-screen z-20 ${
+          isSidebarOpen ? "left-0" : "-left-72"
+        } lg:left-0 lg:w-auto`}
+      >
+        {/* Sidebar Links */}
+        <div className="mt-5">
+          <NavItems
+            icon={<FaHome />}
+            text="Home"
+            onClick={() => navigate("/admin")}
+          />
+          <NavItems
+            icon={<FaBook />}
+            text="Classes"
+            onClick={() => navigate("/admin/classes")}
+          />
+          <NavItems
+            icon={<FaChalkboardTeacher />}
+            text="Teacher"
+            onClick={() => navigate("/admin/teachers")}
+          />
+          <NavItems
+            icon={<FaUserGraduate />}
+            text="Student"
+            onClick={() => navigate("/admin/students")}
+          />
+          {/* <NavItems
               icon={<FaEnvelope />}
               text="Student"
               onClick={() => navigate("/admin/students")}
             /> */}
-            <NavItems
-              icon={<FaSignOutAlt />}
-              text="Logout"
-              onClick={() => navigate("/logout")}
-            />
-          </div>
+          <NavItems
+            icon={<FaSignOutAlt />}
+            text="Logout"
+            onClick={() => navigate("/logout")}
+          />
         </div>
       </div>
+      {/* </div> */}
     </div>
   );
 }

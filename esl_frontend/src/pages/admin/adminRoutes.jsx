@@ -12,7 +12,7 @@ function AdminRoutes() {
       <NavbarAdmin />
 
       {/* Content Area */}
-      <div className="flex-1 p-3 mt-15">
+      <div className="flex-1 p-3 mt-15 lg:ml-27">
         <Routes>
           <Route path="/" element={<DashboardAdmin />} />
           <Route path="/classes" element={<ClassesAdmin />} />
