@@ -39,7 +39,7 @@ function ClassesAdmin() {
               type="search"
               id="default-search"
               class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Search Mockups, Logos..."
+              placeholder="Search teacher or students"
               required
             />
 
@@ -55,7 +55,7 @@ function ClassesAdmin() {
       </div>
 
       {/* <div className="h-3/4"> */}
-        <div className="space-y-4 overflow-y-auto mt-15">
+        <div className="space-y-4 overflow-y-auto mt-15 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
         {Array.from({ length: 8 }, () => (
           <div className="p-4 bg-white shadow-md rounded-lg flex justify-between items-center">
             <div>

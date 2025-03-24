@@ -80,11 +80,6 @@ function NavbarAdmin() {
             text="Student"
             onClick={() => navigate("/admin/students")}
           />
-          {/* <NavItems
-              icon={<FaEnvelope />}
-              text="Student"
-              onClick={() => navigate("/admin/students")}
-            /> */}
           <NavItems
             icon={<FaSignOutAlt />}
             text="Logout"
